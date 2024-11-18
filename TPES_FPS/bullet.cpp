@@ -92,18 +92,9 @@ void CBullet::OnActive()
 		{
 		case BULLET_ALLEGIANCE_PLAYER:
 			bHitCheck = HitEnemy();
-			if (bHitCheck == true)
-			{
-				Uninit();
-			}
-			break;
 
 		case BULLET_ALLEGIANCE_ENEMY:
 			bHitCheck = HitPlayer();
-			if (bHitCheck == true)
-			{
-				Uninit();
-			}
 			break;
 
 		default:
